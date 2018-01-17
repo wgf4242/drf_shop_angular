@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {GoodsService} from '../shared/goods.service';
+import {GoodService} from '../shared/goods.service';
 import {Category} from '../models/goods';
 
 @Component({
@@ -11,7 +11,7 @@ export class NavbarComponent implements OnInit {
   showChildrenMenu: any;
   categorys: Category[];
 
-  constructor(private goodService: GoodsService) {
+  constructor(private goodService: GoodService) {
   }
 
   ngOnInit() {

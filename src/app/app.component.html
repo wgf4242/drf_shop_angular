@@ -1,3 +1,13 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <app-navbar></app-navbar>
-<app-dropdown></app-dropdown>
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+    <app-sidebar [categorys]="categorys"></app-sidebar>
+    </div>
+    <div class="col-md-9">
+      <router-outlet></router-outlet>
+      <!--<app-main></app-main>-->
+    </div>
+  </div>
+</div>

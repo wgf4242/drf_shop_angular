@@ -1,0 +1,13 @@
+<!--<div class="card" style="width: 18rem;">-->
+<div class="row">
+  <div class="card col-md-3" *ngFor="let good of goods?.results">
+    <img class="card-img-top" [src]="good.goods_front_image" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{good.market_price}}</h5>
+      <p class="card-text">{{good.name}}</p>
+      <p class="card-text">
+        <small class="text-muted">销量 {{good.sold_num}} 件</small>
+      </p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+<div class="h3">
+  h3. ammount
+</div>
+<div>
+  <div *ngFor="let category of categorys"><p class="h5">{{category.name}}</p>
+    <ul>
+      <li *ngFor="let cat of category.sub_cat"><a [routerLink]="['/mygoods/']" [queryParams]="{top_category: cat.id}">
+      <!--<li *ngFor="let cat of category.sub_cat"><a [routerLink]="['/goods/', [queryParams]='{top_category : `cat.id`}']">-->
+        <small>{{cat.name}}</small>
+      </a></li>
+    </ul>
+  </div>
+</div>
